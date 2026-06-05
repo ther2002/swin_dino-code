@@ -99,6 +99,12 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
+# Custom ignored directories
+Hu_configs/
+outputs/
+work_dirs/
+
+
 # mkdocs documentation
 /site
 

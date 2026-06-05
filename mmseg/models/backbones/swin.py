@@ -568,7 +568,7 @@ class SwinTransformer(BaseModule):
         self.use_abs_pos_embed = use_abs_pos_embed
 
         assert strides[0] == patch_size, 'Use non-overlapping patch embed.'
-
+        self.embed_dims = embed_dims  # 关键修改
         self.patch_embed = PatchEmbed(
             in_channels=in_channels,
             embed_dims=embed_dims,
